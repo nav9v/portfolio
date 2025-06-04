@@ -10,6 +10,7 @@ import BlurFade from '~/components/ui/blur-fade'
 import BlurFadeText from '~/components/ui/blur-fade-text'
 import { DATA } from '~/config'
 
+
 const BLUR_FADE_DELAY = 0.04
 
 export default function Page() {
@@ -56,6 +57,19 @@ export default function Page() {
             >
               {DATA_EN.summary}
             </Markdown>
+            {(
+            <div className='my-4 flex font-sans text-muted-foreground text-sm'>
+              <div className='w-1 bg-gray-200 dark:bg-gray-700/80' />
+              <span className='ml-2'>📝</span>
+              <Link
+                href='https://rxresu.me/nav9v/public'
+                className='text-blue-500'
+                data-umami-event='view-my-resume'
+              >
+                <u>Resume</u>
+              </Link>
+            </div>
+          )}
           </BlurFade>
         </section>
         <section id='work'>
