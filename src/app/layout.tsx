@@ -31,7 +31,7 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: '/twitter-image.png',
+        url: `${DATA.url}/twitter-image.png`,
         width: 1200,
         height: 630,
         alt: DATA.name + ' - ' + DATA.slogan,
@@ -53,7 +53,7 @@ export const metadata = {
     title: DATA.name + ' | ' + DATA.slogan,
     card: 'summary_large_image',
     description: DATA.description,
-    images: ['/twitter-image.png'],
+    images: [`${DATA.url}/twitter-image.png`],
     creator: '@nav9v',
   },
   verification: {

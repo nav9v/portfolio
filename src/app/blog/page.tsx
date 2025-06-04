@@ -3,10 +3,34 @@ import Link from 'next/link';
 import BlurFade from '~/components/ui/blur-fade'; // Your BlurFade component path
 import { getAllPosts, BlogPostListItem } from '~/lib/blog';
 import { formatDate } from '~/lib/utils'; // Ensure this utility exists and is correct
+import { DATA } from '~/config';
 
 export const metadata = {
   title: 'Blog',
-  description: 'My thoughts, ideas, and reflections.', // Customize this
+  description: 'My thoughts, ideas, and reflections.',
+  openGraph: {
+    title: 'Blog | ' + DATA.name,
+    description: 'My thoughts, ideas, and reflections.',
+    url: DATA.url + '/blog',
+    siteName: DATA.name,
+    locale: 'en',
+    type: 'website',
+    images: [
+      {
+        url: `${DATA.url}/twitter-image.png`,
+        width: 1200,
+        height: 630,
+        alt: 'Blog - ' + DATA.name,
+      },
+    ],
+  },
+  twitter: {
+    title: 'Blog | ' + DATA.name,
+    card: 'summary_large_image',
+    description: 'My thoughts, ideas, and reflections.',
+    images: [`${DATA.url}/twitter-image.png`],
+    creator: '@nav9v',
+  },
 };
 
 const BLUR_FADE_DELAY = 0.04;

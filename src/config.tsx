@@ -8,7 +8,7 @@ export const DATA = {
   location: 'Jalandhar, IN',
   locationLink: 'https://maps.app.goo.gl/zpAabyLFYVA6fJL4A',
   description:
-    'Passionate product engineer specializing in AI/ML, IoT, and robotics. Building innovative solutions and contributing to open-source projects.',
+    'Passionate engineer specializing in AI/ML, IoT, and robotics. Building innovative solutions and contributing to open-source projects.',
   summary:
     'I\'m Passionate about delving into the realm of technological advancements across the globe. My interests encompass the fascinating domains of coding, CAD, IoT, the captivating world of robotics and innovation!.',
   avatarUrl: '/me.jpg',

@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: PostPageProps): Promise<Metad
   const { title, publishedAt, summary: description, image } = post.metadata;
   const ogImage = image
     ? `${DATA.url}${image.startsWith('/') ? '' : '/'}${image}`
-    : `${DATA.url}/twitter-image.png`;
+    : `${DATA.url}/api/og?title=${encodeURIComponent(title)}&description=${encodeURIComponent(description)}`;
 
   return {
     title,
@@ -40,6 +40,7 @@ export async function generateMetadata({ params }: PostPageProps): Promise<Metad
       type: 'article',
       publishedTime: publishedAt,
       url: `${DATA.url}/blog/${post.slug}`,
+      siteName: DATA.name,
       images: [
         {
           url: ogImage,
@@ -54,7 +55,7 @@ export async function generateMetadata({ params }: PostPageProps): Promise<Metad
       title,
       description,
       images: [ogImage],
-      creator: DATA.contact.social.X?.url.split('/').pop() ? `@${DATA.contact.social.X.url.split('/').pop()}` : undefined,
+      creator: '@nav9v',
     },
   };
 }

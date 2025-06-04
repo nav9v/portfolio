@@ -15,7 +15,7 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: '/twitter-image.png',
+        url: `${DATA.url}/twitter-image.png`,
         width: 1200,
         height: 630,
         alt: 'Gallery - ' + DATA.name,
@@ -26,7 +26,7 @@ export const metadata = {
     title: 'Gallery | ' + DATA.name,
     card: 'summary_large_image',
     description: 'A collection of my photography and visual work.',
-    images: ['/twitter-image.png'],
+    images: [`${DATA.url}/twitter-image.png`],
     creator: '@nav9v',
   },
 };
