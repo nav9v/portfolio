@@ -29,6 +29,14 @@ export const metadata = {
     siteName: DATA.name,
     locale: 'en',
     type: 'website',
+    images: [
+      {
+        url: '/twitter-image.png',
+        width: 1200,
+        height: 630,
+        alt: DATA.name + ' - ' + DATA.slogan,
+      },
+    ],
   },
   robots: {
     index: true,
