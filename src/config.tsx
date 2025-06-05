@@ -86,7 +86,7 @@ export const DATA = {
       badges: [],
       location: 'Remote',
       title: 'Freelance Product Engineer',
-      logoUrl: '/free.ico',
+      logoUrl: '/free.png',
       start: 'Aug 2024',
       end: 'Present',
       description:

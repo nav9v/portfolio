@@ -83,7 +83,7 @@ export default async function SinglePostPage({ params }: PostPageProps) {
             description: post.metadata.summary,
             image: post.metadata.image
               ? `${DATA.url}${post.metadata.image.startsWith('/') ? '' : '/'}${post.metadata.image}`
-              : `${DATA.url}/og?title=${encodeURIComponent(post.metadata.title)}`,
+              : `${DATA.url}/api/og?title=${encodeURIComponent(post.metadata.title)}`,
             url: `${DATA.url}/blog/${post.slug}`,
             author: {
               '@type': 'Person',
