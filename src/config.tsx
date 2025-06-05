@@ -67,7 +67,7 @@ export const DATA = {
       },
       Telegram: {
         name: 'Telegram',
-        url: 'https://t.me/NSharmav',
+        url: 'https://t.me/NSharma',
         icon: <Icons.telegram className='size-full' />,
         navbar: true,
       },
