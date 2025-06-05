@@ -57,7 +57,7 @@ export default function Page() {
             >
               {DATA_EN.summary}
             </Markdown>
-            {(
+            {/* {(
             <div className='my-4 flex font-sans text-muted-foreground text-sm'>
               <div className='w-1 bg-gray-200 dark:bg-gray-700/80' />
               <span className='ml-2'>📝</span>
@@ -69,7 +69,7 @@ export default function Page() {
                 <u>Resume</u>
               </Link>
             </div>
-          )}
+          )} */}
           </BlurFade>
         </section>
         <section id='work'>

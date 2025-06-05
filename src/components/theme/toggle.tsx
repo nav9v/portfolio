@@ -13,11 +13,14 @@ export const ModeToggle = () => {
 
   const toggleTheme = () => {
     const newTheme = resolvedTheme === 'light' ? 'dark' : 'light'
-
-    if (!document.startViewTransition) {
-      setTheme(newTheme)
+    if (typeof document !== 'undefined' && 'startViewTransition' in document) {
+      try {
+        document.startViewTransition(() => setTheme(newTheme))
+      } catch {
+        setTheme(newTheme)
+      }
     } else {
-      document.startViewTransition(() => setTheme(newTheme))
+      setTheme(newTheme)
     }
   }
 
